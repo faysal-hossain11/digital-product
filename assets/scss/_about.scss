@@ -1,0 +1,361 @@
+/*
+
+==================================
+    4. about
+==================================
+
+*/
+.mariox{
+   &__aboutpage{
+      padding: 330px 0;
+      background-color: var(--theme-1);
+      position: relative;
+      padding-bottom: 230px;
+      @include mq(xl){
+         padding: 196px 0;
+         padding-bottom: 120px;
+      }
+      @include mq(md){
+         padding: 50px 0;
+      }
+      &-content{
+         text-align: center;
+      }
+      &-shape1{
+         position: absolute;
+         left: 0;
+         top: 100px;
+         animation: float-bob-y 2s infinite;
+         @include mq(md){
+            display: none;
+         }
+      }
+      &-shape2{
+         position: absolute;
+         right: 430px;
+         top: 365px;
+         animation: rotated 2s infinite;
+         @include mq(md){
+            display: none;
+         }
+      }
+      &-shape3{
+         position: absolute;
+         right: 120px;
+         top: 145px;
+         animation: float-bob-y 2s infinite;
+         @include mq(md){
+            display: none;
+         }
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 64px;
+         line-height: 1;
+         text-align: center;
+         color: #0D0E10;
+         @include mq(xl){
+            font-size: 40px;
+         }
+         @include mq(md){
+            font-size: 30px;
+         }
+      }
+      &-dis{
+         font-family: $headingFont;
+         font-weight: 600;
+         font-size: 48px;
+         line-height: 72px;
+         text-align: center;
+         text-decoration-line: underline;
+         color: #0D0E10;
+         max-width: 915px;
+         margin: auto;
+         padding: 150px 0;
+         padding-bottom: 0;
+         @include mq(xl){
+            font-size: 30px;
+            line-height: 1.3;
+            padding: 50px 0;
+         }
+         @include mq(md){
+            padding: 50px 0;
+            font-size: 30px;
+            line-height: 1.2;
+         }
+      }
+   }
+}
+.mariox{
+   &__aservice{
+      padding: 130px 0;
+      @include mq(xl){
+         padding-top: 0;
+      }
+      @include mq(md){
+         padding: 50px 0;
+      }
+      &-subtitle{
+         font-weight: 700;
+         font-size: 16px;
+         background: linear-gradient(90deg, #B16CEA 0%, #FF5E69 45.83%, #FFA84B 100%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         text-fill-color: transparent;
+         display: inline-block;
+         padding-bottom: 20px;
+         font-family: $headingFont;
+      }
+      &-s2{
+         position: absolute;
+         right: 0;
+         top: 65px;
+         animation: rotated 2s infinite;
+      }
+      &-s1{
+         position: absolute;
+         right: 30px;
+         bottom: -48px;
+         @include mq(md){
+            padding: 50px 30px;
+            display: none;
+         }
+      }
+      &-s3{
+         position: absolute;
+         right: -146px;
+         bottom: -13px;
+         z-index: 3;
+         width: 80%;
+         @include mq(md){
+            padding: 50px 30px;
+            display: none;
+         }
+      }
+      &-item{
+         background-color: var(--black-1);
+         padding: 100px 60px;
+         position: relative;
+         padding-bottom: 250px;
+         border-radius: 15px;
+         overflow: hidden;
+         height: 580px;
+         @include mq(md){
+            height: auto;
+            margin-bottom: 30px;
+         }
+         &.item-2{
+            background-color: var(--theme-1);
+            @include mq(xl-1){
+               padding: 45px 28px;
+               position: relative;
+               padding-bottom: 100px;
+            }
+            @include mq(md){
+               padding-bottom: 45px;
+            }
+         }
+         @include mq(xl-1){
+            padding: 45px 28px;
+            position: relative;
+            padding-bottom: 100px;
+         }
+         @include mq(md){
+            padding: 50px 30px;
+         }
+      }
+      &-title{
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 1.2;
+         color: var(--white);
+         @include mq(xl-1){
+            font-size: 30px;
+         }
+         @include mq(md){
+            font-size: 30px;
+         }
+      }
+      &-titlee{
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 1.2;
+         color: var(--black-1);
+         @include mq(xl-1){
+            font-size: 30px;
+         }
+         @include mq(md){
+            font-size: 30px;
+         }
+      }
+   }
+}
+.container{
+   max-width: 1140px;
+   margin: auto;
+}
+
+.mariox{
+   &__ateam{
+      background-color: var(--theme-1);
+      padding: 115px 0;
+      margin-top: 150px;
+      @include mq(md){
+         margin-top: 50px;
+      }
+      &-items{
+         display: flex;
+         gap: 110px;
+         @include mq(md){
+            gap: 50px;
+         }
+         @include mq(sm){
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+         }
+      }
+      &-item{
+         text-align: center;
+         max-width: 225px;
+         &:hover{
+            img{
+               transform: scale(.8);
+            }
+         }
+         &:nth-child(even){
+            margin-top: 50px;
+            @include mq(md){
+               margin-top: 0;
+            }
+         }
+         img{
+            margin-bottom: 30px;
+            transition: .3s;
+         }
+         p{
+            font-family: $headingFont;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: var(--black-1);
+            margin-bottom: 0;
+         }
+         span{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 34px;
+            color: #3C434A;
+            display: inline-block;
+         }
+      }
+   }
+}
+
+.marioxx__brand-wrapper.mariox__brandwrapper.about-brand {
+   border-radius: 0;
+}
+
+
+
+// login 
+.login-area{
+   margin: 120px 0;
+   @include mq(md){
+      margin: 50px 0;
+   }
+}
+.basic-login {
+   padding: 90px;
+   border: 2px solid #eaedff;
+   @include mq(md){
+      padding: 15px;
+   }
+}
+.basic-login h3 {
+   font-size: 30px;
+   @include mq(sm){
+      padding-bottom: 30px;
+   }
+}
+.basic-login label {
+   color: #222;
+   display: block;
+   padding-bottom: 10px;
+}
+.basic-login input {
+   width: 100%;
+   height: 60px;
+   border: 2px solid #eaedff;
+   color: #6f7172;
+   padding: 0 20px;
+   margin-bottom: 20px;
+   transition: .3s;
+   &:focus{
+      outline: 1px solid #4C30F6;
+   }
+}
+.basic-login input[type=checkbox]{
+   height: 12px;
+   width: auto;
+}
+.bt-btn {
+   background: #4C30F6;
+   color: #fff;
+   padding: 20px 35px;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 1px;
+   font-size: 13px;
+   border-radius: 30px;
+   border: 0;
+   display: inline-block;
+   transition: 0.3s;
+   line-height: 1;
+   border: 1px solid transparent;
+   transition: .3s;
+   text-align: center;
+   &:hover{
+      background: transparent;
+      border: 1px solid #4C30F6;
+      color: #0D0E10;
+   }
+}
+.or-divide {
+   border-top: 2px solid #eaedff;
+   margin: 40px 0;
+   text-align: center;
+   position: relative;
+}
+.bt-btn {
+   background: #4C30F6;
+   color: #fff;
+   padding: 20px 35px;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 1px;
+   font-size: 13px;
+   border-radius: 30px;
+   border: 0;
+   display: inline-block;
+   transition: 0.3s;
+   border: 1px solid transparent;
+   line-height: 1;
+   &:hover{
+      background: transparent;
+      border: 1px solid #4C30F6;
+      color: #0D0E10;
+   }
+}
+.f-left {
+   float: left;
+}
+
+.f-right {
+   float: right;
+}
+.login-action label {
+   display: inline-block;
+   margin-left: 5px;
+}
